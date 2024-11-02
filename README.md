@@ -1,1 +1,1 @@
-E-Commerce of <a href="https://lautanberlianku.co.id/">lautanberlianku<a/>
+E-Commerce of <a href="https://lautanberlianku.co.id/" target="_blank">lautanberlianku<a/>
