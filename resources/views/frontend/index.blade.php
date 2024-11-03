@@ -3,7 +3,7 @@
 @section('content')
 
 @section('title')
-SALZA E-Commerce
+Lautan Berlian E-Commerce
 @endsection
 
 <div class="body-content outer-top-xs" id="top-banner-and-menu">

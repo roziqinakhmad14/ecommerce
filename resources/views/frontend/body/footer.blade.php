@@ -5,7 +5,7 @@
 
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="module-heading">
-                        <h4 class="module-title">SALZA</h4>
+                        <h4 class="module-title">Lautan Berlian</h4>
                     </div>
                     <!-- /.module-heading -->
 
@@ -100,7 +100,7 @@
     <div class="copyright-bar">
         <div class="container">
             <div class="col-xs-12 col-sm-12 no-padding social">
-                <p class="text-center" style="color: #b667f1"><i class="fa fa-copyright" aria-hidden="true"></i>2022 Salza. All Rights Reserved</p>
+                <p class="text-center" style="color: #b667f1"><i class="fa fa-copyright" aria-hidden="true"></i>2024 Lautan Berlian. All Rights Reserved</p>
             </div>
         </div>
     </div>

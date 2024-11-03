@@ -9,5 +9,5 @@
       </li>
     </ul>
     </div>
-    &copy; 2022 <a href="#">Salza E-commerce</a>. All Rights Reserved.
+    &copy; 2022 <a href="#">Lautan Berlian E-commerce</a>. All Rights Reserved.
   </footer>

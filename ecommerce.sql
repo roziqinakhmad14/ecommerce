@@ -543,7 +543,7 @@ CREATE TABLE `seos` (
 --
 
 INSERT INTO `seos` (`id`, `meta_title`, `meta_author`, `meta_keyword`, `meta_description`, `google_analytics`, `created_at`, `updated_at`) VALUES
-(1, 'salza ecommerce', 'Salza', 'ecommerce, salza, salza store', 'ecommerce', 'window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag(\'js\', new Date());\r\n\r\n  gtag(\'config\', \'UA-84816806-1\');', NULL, '2022-05-18 07:29:14');
+(1, 'Lautan Berlian Ecommerce', 'lautanberlianku', 'ecommerce, lautanberlianku, sparepart', 'ecommerce', 'window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag(\'js\', new Date());\r\n\r\n  gtag(\'config\', \'UA-84816806-1\');', NULL, '2022-05-18 07:29:14');
 
 -- --------------------------------------------------------
 
@@ -663,7 +663,7 @@ CREATE TABLE `site_settings` (
 --
 
 INSERT INTO `site_settings` (`id`, `logo`, `phone_one`, `phone_two`, `email`, `company_name`, `company_address`, `facebook`, `twitter`, `linkedin`, `youtube`, `created_at`, `updated_at`) VALUES
-(1, 'upload/logo/1727013687201165.png', '+6281563977109', '+62895335490295', 'esalza@gmail.com', 'SALZA', 'Jl. Babakan Tiga No. 82 Ciwidey', 'salzashop', 'salzashop', 'salzashop', 'salza', NULL, '2022-05-12 11:03:31');
+(1, 'upload/logo/1727013687201165.png', '+6281563977109', '+62895335490295', 'lautanberlian@gmail.com', 'Lautan Berlian', 'Jl. Babakan Tiga No. 82 Ciwidey', 'lautanberlianshop', 'lautanberlianshop', 'lautanberlianshop', 'lautanberlian', NULL, '2022-05-12 11:03:31');
 
 -- --------------------------------------------------------
 

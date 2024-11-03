@@ -97,7 +97,7 @@ Transfer Bank Manual
                                         bank pada no. rekening berikut!</p>
                                       <img src="{{ asset('frontend/assets/images/payments/bri.png') }}" alt="bri"
                                           style="width: 125px;">
-                                      <h3 style="float: right; margin-top: 0px;">029872653781 <br><span style="font-size: 14px; font-style: italic;">A.n. Salza Store</span></h3>
+                                      <h3 style="float: right; margin-top: 0px;">029872653781 <br><span style="font-size: 14px; font-style: italic;">A.n. Lautan Berlian Store</span></h3>
                                       
                                       <div class="form-group mt-50">
                                           <br>
