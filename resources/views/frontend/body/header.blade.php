@@ -39,7 +39,7 @@
                     <!-- ============================================================= LOGO ============================================================= -->
                     <div class="logo">
                         <a href="{{ url('/') }}">
-                            <a href="{{ url('/') }}"> <img src="{{ asset($setting->logo) }}" alt="logo"></a>
+                            <a href="{{ url('/') }}"> <img src="{{ asset($setting->logo) }}" alt="logo" height="36px"></a>
                         </a>
                     </div>
                     <!-- /.logo -->

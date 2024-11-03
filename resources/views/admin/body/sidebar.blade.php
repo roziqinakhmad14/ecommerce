@@ -14,8 +14,8 @@ $route = Route::current()->getName();
                 <a href="{{ url('/admin/dashboard') }}">
                     <!-- logo for regular state and mobile devices -->
                     <div class="d-flex align-items-center justify-content-center">
-                        <img src="{{ asset('backend/images/logo-dark.png') }}" alt="">
-                        <h3><b>Lautan Berlian</b> Admin</h3>
+                        <img src="{{ asset('backend/images/logo-dark.png') }}" alt="" width="36px">
+                        <h3><b>LB</b> Admin</h3>
                     </div>
                 </a>
             </div>

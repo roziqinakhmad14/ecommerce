@@ -15,6 +15,8 @@ $seo = App\Models\Seo::find(1);
     <meta name="keywords" content="{{ $seo->meta_keyword }}">
     <meta name="robots" content="all">
 
+    <link rel="icon" href="{{ asset('backend/images/favicon.ico') }}">
+
     <!-- /// Google Analytics Code // -->
     <script>
         {{ $seo->google_analytics }}
