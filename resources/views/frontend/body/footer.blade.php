@@ -100,7 +100,7 @@
     <div class="copyright-bar">
         <div class="container">
             <div class="col-xs-12 col-sm-12 no-padding social">
-                <p class="text-center" style="color: #b667f1"><i class="fa fa-copyright" aria-hidden="true"></i>2024 Lautan Berlian. All Rights Reserved</p>
+                <p class="text-center" style="color: #ffffff"><i class="fa fa-copyright" aria-hidden="true"></i>2024 Lautan Berlian. All Rights Reserved</p>
             </div>
         </div>
     </div>

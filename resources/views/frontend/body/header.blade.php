@@ -53,7 +53,7 @@
                     <div class="search-area">
                         <form method="post" action="{{ route('product.search') }}">
                             @csrf
-                            <div class="control-group">
+                            <div class="control-group" style="border: 1px solid #FBEBD8; border-radius: 4px!important;">
                                 <input class="search-field" onfocus="search_result_show()" onblur="search_result_hide()"
                                     id="search" name="search" placeholder="Cari Disini..." />
                                 <button class="search-button" type="submit"></button>
