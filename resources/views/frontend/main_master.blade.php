@@ -161,7 +161,7 @@ $seo = App\Models\Seo::find(1);
 
                         <div class="col-md-4">
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <label for="color">Pilih Warna</label>
                                 <select class="form-control" id="color" name="color">
 
@@ -176,7 +176,7 @@ $seo = App\Models\Seo::find(1);
                                     <option>1</option>
 
                                 </select>
-                            </div> <!-- // end form group -->
+                            </div> <!-- // end form group --> --}}
 
                             <div class="form-group">
                                 <label for="qty">Atur Jumlah</label>

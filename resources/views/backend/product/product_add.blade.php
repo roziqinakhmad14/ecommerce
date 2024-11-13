@@ -73,7 +73,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
+                                        {{-- <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <h5>Ukuran Produk <span class="text-danger">*</span></h5>
@@ -98,14 +98,14 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <h5>Tag Produk <span class="text-danger">*</span></h5>
                                                     <div class="controls">
                                                         <input type="text" name="product_tags" class="form-control"
-                                                            value="sneakers adidas" data-role="tagsinput" required="">
+                                                            value="Part Engine" data-role="tagsinput" required="">
                                                         @error('product_tags')
                                                         <span class="text-danger">{{ $message }}</span>
                                                         @enderror
@@ -218,6 +218,10 @@
                                                         <select name="subcategory_id" class="form-control" required="">
                                                             <option value="" selected="" disabled="">Pilih Sub Kategori
                                                             </option>
+                                                            {{-- @foreach ($subcategories as $subcategory)
+                                                            <option value="{{ $subcategory->id }}">
+                                                                {{ $subcategory->subcategory_name }}</option>
+                                                            @endforeach --}}
                                                         </select>
                                                         @error('subcategory_id')
                                                         <span class="text-danger">{{ $message }}</span>
@@ -233,7 +237,10 @@
                                                                 <option value="" selected="" disabled="">Sub-Sub
                                                                     Kategori
                                                                 </option>
-
+                                                                {{-- @foreach ($subsubcategories as $subsubcategory)
+                                                                    <option value="{{ $subsubcategory->id }}">
+                                                                    {{ $subsubcategory->subsubcategory_name }}</option>
+                                                                @endforeach --}}
                                                             </select>
                                                             @error('subsubcategory_id')
                                                             <span class="text-danger">{{ $message }}</span>
@@ -336,8 +343,12 @@
                     type: "GET",
                     dataType: "json",
                     success: function (data) {
-                        $('select[name="subsubcategory_id"]').html('');
+                        $('select[name="subsubcategory_id"]').html(
+                            '<option value="" selected>Sub-Sub Kategori</option>'
+                        );
                         var d = $('select[name="subcategory_id"]').empty();
+                        $('select[name="subcategory_id"]').append(
+                            '<option value="" selected>Pilih Sub Kategori</option>');
                         $.each(data, function (key, value) {
                             $('select[name="subcategory_id"]').append(
                                 '<option value="' + value.id + '">' + value
@@ -360,6 +371,8 @@
                     dataType: "json",
                     success: function (data) {
                         var d = $('select[name="subsubcategory_id"]').empty();
+                        $('select[name="subsubcategory_id"]').append(
+                            '<option value="" selected>Sub-Sub Kategori</option>');
                         $.each(data, function (key, value) {
                             $('select[name="subsubcategory_id"]').append(
                                 '<option value="' + value.id + '">' + value

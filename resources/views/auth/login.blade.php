@@ -44,7 +44,11 @@
                                     </label>
                                     <a href="{{ route('password.request') }}" class="forgot-password pull-right">Lupa kata sandi?</a>
                                 </div>
-                                <button type="submit" class="btn-upper btn btn-primary checkout-page-button">Masuk</button>
+                                <div>
+                                    <button type="submit" class="btn-upper btn btn-primary checkout-page-button">Masuk</button>
+                                    <br><br>
+                                    <a href="/admin/login">Masuk sebagai Admin?</a>
+                                </div>
                             </div>
                             <!-- Sign-in -->			
                         </form>					

@@ -19,8 +19,10 @@ class ProductController extends Controller
     
 	public function AddProduct(){
 		$categories = Category::latest()->get();
+		$subcategories = SubCategory::latest()->get();
+		$subsubcategories = SubSubCategory::latest()->get();
 		$brands = Brand::latest()->get();
-		return view('backend.product.product_add',compact('categories','brands'));
+		return view('backend.product.product_add',compact('categories', 'subcategories', 'subsubcategories', 'brands'));
 
 	}
 
@@ -45,8 +47,8 @@ class ProductController extends Controller
       	'product_qty' => $request->product_qty,
       	'product_weight' => $request->product_weight,
       	'product_tags' => $request->product_tags,
-      	'product_size' => $request->product_size,
-      	'product_color' => $request->product_color,
+      	// 'product_size' => $request->product_size,
+      	// 'product_color' => $request->product_color,
 
       	'product_price' => $request->product_price,
       	'product_discount' => $request->product_discount,

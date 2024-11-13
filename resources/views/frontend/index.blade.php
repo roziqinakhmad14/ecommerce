@@ -52,7 +52,7 @@ Lautan Berlian E-Commerce
                                 <div class="info-box">
                                     <div class="row">
                                         <div class="col-xs-12">
-                                            <i class="fa fa-truck" style="color: #FBEBD8; font-size: 30px"
+                                            <i class="fa fa-truck" style="color: #ffffff; font-size: 30px"
                                                 aria-hidden="true"></i>
                                             <h4 class="info-box-heading green">Pengiriman Cepat</h4>
                                         </div>
@@ -66,7 +66,7 @@ Lautan Berlian E-Commerce
                                 <div class="info-box">
                                     <div class="row">
                                         <div class="col-xs-12">
-                                            <i class="fa fa-check" style="color: #FBEBD8; font-size: 30px"
+                                            <i class="fa fa-check" style="color: #ffffff; font-size: 30px"
                                                 aria-hidden="true"></i>
                                             <h4 class="info-box-heading green">Kualitas Terjamin</h4>
                                         </div>
@@ -80,7 +80,7 @@ Lautan Berlian E-Commerce
                                 <div class="info-box">
                                     <div class="row">
                                         <div class="col-xs-12">
-                                            <i class="fa fa-money" style="color: #FBEBD8; font-size: 30px"
+                                            <i class="fa fa-money" style="color: #ffffff; font-size: 30px"
                                                 aria-hidden="true"></i>
                                             <h4 class="info-box-heading green">Pembayaran Mudah</h4>
                                         </div>
@@ -94,7 +94,7 @@ Lautan Berlian E-Commerce
                                 <div class="info-box">
                                     <div class="row">
                                         <div class="col-xs-12">
-                                            <i class="fa fa-user" style="color: #FBEBD8; font-size: 30px"
+                                            <i class="fa fa-user" style="color: #ffffff; font-size: 30px"
                                                 aria-hidden="true"></i>
                                             <h4 class="info-box-heading green">Admin Bersahabat</h4>
                                         </div>

@@ -163,7 +163,7 @@
                                 </div><!-- /.price-container -->
 
                                 <!--     /// Add Product Color And Product Size ///// -->
-                                <div class="row">
+                                {{-- <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label class="info-title control-label">Pilih Warna <span> </span></label>
@@ -194,7 +194,7 @@
 
                                         </div> <!-- // end form group -->
                                     </div> <!-- // end col 6 -->
-                                </div><!-- /.row -->
+                                </div><!-- /.row --> --}}
 
                                 <div class="quantity-container info-container">
                                     <div class="row">
