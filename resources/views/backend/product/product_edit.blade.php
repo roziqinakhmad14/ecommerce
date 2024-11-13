@@ -150,7 +150,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
+                                {{-- <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <h5>Ukuran Produk <span class="text-danger">*</span></h5>
@@ -177,14 +177,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h5>Tag Produk <span class="text-danger">*</span></h5>
                                             <div class="controls">
                                                 <input type="text" name="product_tags" class="form-control"
-                                                    value="hitam,biru,merah" data-role="tagsinput" required="">
+                                                    value="Part Engine" data-role="tagsinput" required="">
                                                 @error('product_tags')
                                                 <span class="text-danger">{{ $message }}</span>
                                                 @enderror
