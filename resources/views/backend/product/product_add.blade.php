@@ -36,10 +36,10 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <h5>Berat Produk <span class="text-danger">*</span></h5>
+                                                    <h5>Berat Produk</h5>
                                                     <div class="controls">
-                                                        <input type="text" name="product_weight"
-                                                            placeholder="Berat Produk" class="form-control">
+                                                        <input type="number" name="product_weight"
+                                                            placeholder="Berat Produk (gram)" class="form-control">
                                                         @error('product_weight')
                                                         <span class="text-danger">{{ $message }}</span>
                                                         @enderror
@@ -64,8 +64,8 @@
                                                 <div class="form-group">
                                                     <h5>Stok Produk <span class="text-danger">*</span></h5>
                                                     <div class="controls">
-                                                        <input type="text" name="product_qty"
-                                                            placeholder="Jumlah Stok Produk" class="form-control">
+                                                        <input type="number" name="product_qty"
+                                                            placeholder="Jumlah Stok Produk" class="form-control" required="">
                                                         @error('product_qty')
                                                         <span class="text-danger">{{ $message }}</span>
                                                         @enderror
@@ -73,14 +73,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{-- <div class="row">
+                                        <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <h5>Ukuran Produk <span class="text-danger">*</span></h5>
+                                                    <h5>Transmisi (Vehicle)</h5>
                                                     <div class="controls">
-                                                        <input type="text" name="product_size" class="form-control"
-                                                            value="36,37,38" data-role="tagsinput" required="">
-                                                        @error('product_size')
+                                                        <input type="text" name="product_transmission" class="form-control"
+                                                            placeholder="Transmisi (Otomatis, Manual)">
+                                                        @error('product_transmission')
                                                         <span class="text-danger">{{ $message }}</span>
                                                         @enderror
                                                     </div>
@@ -88,24 +88,64 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <h5>Warna Produk <span class="text-danger">*</span></h5>
+                                                    <h5>Bahan Bakar (Vehicle)</h5>
+                                                    <div class="controls">
+                                                        <input type="text" name="product_fuel_type" class="form-control"
+                                                            placeholder="Bahan Bakar (Pertamax/Pertadex)">
+                                                        @error('product_fuel_type')
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <h5>Kapasitas Mesin (Vehicle)</h5>
+                                                    <div class="controls">
+                                                        <input type="number" name="product_engine" class="form-control"
+                                                            placeholder="Kapasitas Mesin (cc)">
+                                                        @error('product_engine')
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <h5>Tempat Duduk (Vehicle)</h5>
+                                                    <div class="controls">
+                                                        <input type="number" name="product_seat" class="form-control"
+                                                            placeholder="Tempat Duduk">
+                                                        @error('product_seat')
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <h5>Warna Produk (Vehicle)</h5>
                                                     <div class="controls">
                                                         <input type="text" name="product_color" class="form-control"
-                                                            value="hitam,biru,merah" data-role="tagsinput" required="">
+                                                            placeholder="hitam, putih" data-role="tagsinput">
                                                         @error('product_color')
                                                         <span class="text-danger">{{ $message }}</span>
                                                         @enderror
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div> --}}
+                                        </div>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <h5>Tag Produk <span class="text-danger">*</span></h5>
                                                     <div class="controls">
                                                         <input type="text" name="product_tags" class="form-control"
-                                                            value="Part Engine" data-role="tagsinput" required="">
+                                                            placeholder="Part Engine" data-role="tagsinput" required="">
                                                         @error('product_tags')
                                                         <span class="text-danger">{{ $message }}</span>
                                                         @enderror
@@ -126,7 +166,7 @@
                                                 <div class="form-group">
                                                     <h5>Harga Produk <span class="text-danger">*</span></h5>
                                                     <div class="controls">
-                                                        <input type="text" name="product_price"
+                                                        <input type="number" name="product_price"
                                                             placeholder="Harga Produk" class="form-control" required="">
                                                         @error('product_price')
                                                         <span class="text-danger">{{ $message }}</span>
@@ -138,7 +178,7 @@
                                                 <div class="form-group">
                                                     <h5>Harga Diskon </h5>
                                                     <div class="controls">
-                                                        <input type="text" name="product_discount" class="form-control"
+                                                        <input type="number" name="product_discount" class="form-control"
                                                             id="harga" placeholder="Harga Diskon">
                                                         @error('product_discount')
                                                         <span class="text-danger">{{ $message }}</span>

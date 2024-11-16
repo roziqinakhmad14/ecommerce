@@ -25,7 +25,7 @@ class CreateProductsTable extends Migration
             $table->string('product_qty');
             $table->string('product_weight');
             $table->string('product_tags');
-            $table->string('product_size')->nullable();
+            $table->string('product_seat')->nullable();
             $table->string('product_color')->nullable();
             $table->string('product_price');
             $table->string('product_discount')->nullable();

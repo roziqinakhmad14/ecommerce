@@ -43,7 +43,7 @@
                                         </td>
                                         <td>{{ $item->product_code }}</td>
                                         <td>{{ $item->product_name }}</td>
-                                        <td>Rp{{ number_format($item->product_price,0,'','.') }}</td>
+                                        <td>Rp{{ number_format((float)$item->product_price,0,'','.') }}</td>
                                         <td>
                                             @if($item->product_discount == NULL)
                                             <span class="badge badge-pill badge-danger">Tidak ada diskon</span>

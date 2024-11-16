@@ -122,7 +122,26 @@
                                     <div class="row">
                                         <div class="col-sm-4">
                                             <div class="stock-box">
-                                                <h6>Berat  <span id="pweight">{{ $product->product_weight }}</span> gram</h6>
+                                                @if ($product->product_weight == NULL)
+                                                @else
+                                                    <h6>Berat  <span id="pweight">{{ $product->product_weight }}</span> gram</h6>
+                                                @endif
+                                                @if ($product->product_transmission == NULL)
+                                                @else
+                                                    <h6>Transmisi  <span id="ptransmission">{{ $product->product_transmission }}</span></h6>
+                                                @endif
+                                                @if ($product->product_fuel_type == NULL)
+                                                @else
+                                                    <h6>Bahan Bakar  <span id="pfueltype">{{ $product->product_fuel_type }}</span></h6>
+                                                @endif
+                                                @if ($product->product_engine == NULL)
+                                                @else
+                                                    <h6>Mesin  <span id="pengine">{{ $product->product_engine }}</span> cc</h6>
+                                                @endif
+                                                @if ($product->product_seat == NULL)
+                                                @else
+                                                    <h6>Tempat Duduk  <span id="pseat">{{ $product->product_seat }}</span></h6>
+                                                @endif
                                                 <h6>Stok  {{ $product->product_qty }}</h6>
                                             </div>
                                         </div>
@@ -163,9 +182,12 @@
                                 </div><!-- /.price-container -->
 
                                 <!--     /// Add Product Color And Product Size ///// -->
-                                {{-- <div class="row">
+                                <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
+                                            @if($product->product_color == null)
+
+                                            @else
                                             <label class="info-title control-label">Pilih Warna <span> </span></label>
                                             <select class="form-control unicase-form-control selectpicker"
                                                 style="display: none;" id="color">
@@ -174,27 +196,10 @@
                                                 <option value="{{ $color }}">{{ ucwords($color) }}</option>
                                                 @endforeach
                                             </select>
-                                        </div> <!-- // end form group -->
-                                    </div> <!-- // end col 6 -->
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            @if($product->product_size == null)
-
-                                            @else
-
-                                            <label class="info-title control-label">Pilih Ukuran <span> </span></label>
-                                            <select class="form-control unicase-form-control selectpicker"
-                                                style="display: none;" id="size">
-                                                <option selected="" disabled="">--Pilih Ukuran--</option>
-                                                @foreach($product_size as $size)
-                                                <option value="{{ $size }}">{{ ucwords($size) }}</option>
-                                                @endforeach
-                                            </select>
                                             @endif
-
                                         </div> <!-- // end form group -->
                                     </div> <!-- // end col 6 -->
-                                </div><!-- /.row --> --}}
+                                </div><!-- /.row -->
 
                                 <div class="quantity-container info-container">
                                     <div class="row">
@@ -206,13 +211,13 @@
                                         <div class="col-sm-2">
                                             <div class="cart-quantity">
                                                 <div class="quant-input">
-                                                    <div class="arrows">
+                                                    <div class="arrows" style="display: none">
                                                         <div class="arrow plus gradient"><span class="ir"><i
                                                                     class="icon fa fa-sort-asc"></i></span></div>
                                                         <div class="arrow minus gradient"><span class="ir"><i
                                                                     class="icon fa fa-sort-desc"></i></span></div>
                                                     </div>
-                                                    <input type="text" id="qty" value="1" min="1">
+                                                    <input type="number" id="qty" value="1" min="1">
                                                 </div>
                                             </div>
                                         </div>

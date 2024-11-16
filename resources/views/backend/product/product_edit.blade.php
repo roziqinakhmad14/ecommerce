@@ -150,41 +150,79 @@
                                         </div>
                                     </div>
                                 </div>
-                                {{-- <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h5>Ukuran Produk <span class="text-danger">*</span></h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <h5>Transmisi (Vehicle)</h5>
                                             <div class="controls">
-                                                <input type="text" name="product_size" class="form-control"
-                                                    value="{{ $products->product_size }}" data-role="tagsinput"
-                                                    required="">
-                                                @error('product_size')
+                                                <input type="text" name="product_transmission" class="form-control"
+                                                    value="{{ $products->product_transmission }}" placeholder="Transmisi (Otomatis, Manual)">
+                                                @error('product_transmission')
                                                 <span class="text-danger">{{ $message }}</span>
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <h5>Warna Produk <span class="text-danger">*</span></h5>
-                                                <div class="controls">
-                                                    <input type="text" name="product_color"
-                                                        value="{{ $products->product_color }}" class="form-control"
-                                                        data-role="tagsinput" required="">
-                                                    @error('product_color')
-                                                    <span class="text-danger">{{ $message }}</span>
-                                                    @enderror
-                                                </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <h5>Bahan Bakar (Vehicle)</h5>
+                                            <div class="controls">
+                                                <input type="text" name="product_fuel_type" class="form-control"
+                                                    value="{{ $products->product_fuel_type }}" placeholder="Bahan Bakar (Pertamax/Pertadex)">
+                                                @error('product_fuel_type')
+                                                <span class="text-danger">{{ $message }}</span>
+                                                @enderror
                                             </div>
                                         </div>
                                     </div>
-                                </div> --}}
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <h5>Kapasitas Mesin (Vehicle)</h5>
+                                            <div class="controls">
+                                                <input type="number" name="product_engine" class="form-control"
+                                                    value="{{ $products->product_engine }}" placeholder="Kapasitas Mesin (cc)">
+                                                @error('product_engine')
+                                                <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <h5>Tempat Duduk (Vehicle)</h5>
+                                            <div class="controls">
+                                                <input type="number" name="product_seat" class="form-control"
+                                                    value="{{ $products->product_seat }}" placeholder="Tempat Duduk">
+                                                @error('product_seat')
+                                                <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <h5>Warna Produk (Vehicle)</h5>
+                                            <div class="controls">
+                                                <input type="text" name="product_color" class="form-control"
+                                                    value="{{ $products->product_color }}" placeholder="hitam, putih" data-role="tagsinput">
+                                                @error('product_color')
+                                                <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h5>Tag Produk <span class="text-danger">*</span></h5>
                                             <div class="controls">
                                                 <input type="text" name="product_tags" class="form-control"
-                                                    value="Part Engine" data-role="tagsinput" required="">
+                                                    value="{{ $products->product_tags }}" placeholder="Part Engine" data-role="tagsinput" required="">
                                                 @error('product_tags')
                                                 <span class="text-danger">{{ $message }}</span>
                                                 @enderror

@@ -45,10 +45,13 @@ class ProductController extends Controller
       	'product_code' => $request->product_code,
 
       	'product_qty' => $request->product_qty,
-      	'product_weight' => $request->product_weight,
+      	'product_weight' => $request->product_weight ?: 0,
       	'product_tags' => $request->product_tags,
-      	// 'product_size' => $request->product_size,
-      	// 'product_color' => $request->product_color,
+		'product_transmission' => $request->product_transmission,
+      	'product_fuel_type' => $request->product_fuel_type,
+      	'product_engine' => $request->product_engine,
+      	'product_seat' => $request->product_seat,
+      	'product_color' => $request->product_color,
 
       	'product_price' => $request->product_price,
       	'product_discount' => $request->product_discount,
@@ -121,8 +124,8 @@ class ProductController extends Controller
 	}
 
 
-	public function ProductDataUpdate(Request $request){
-
+	public function ProductDataUpdate(Request $request)
+	{
 		$product_id = $request->id;
 
          Product::findOrFail($product_id)->update([
@@ -135,10 +138,13 @@ class ProductController extends Controller
       	'product_code' => $request->product_code,
 
       	'product_qty' => $request->product_qty,
-      	'product_weight' => $request->product_weight,
+      	'product_weight' => $request->product_weight ?: 0,
       	'product_tags' => $request->product_tags,
-      	// 'product_size' => $request->product_size,
-      	// 'product_color' => $request->product_color,
+      	'product_transmission' => $request->product_transmission,
+      	'product_fuel_type' => $request->product_fuel_type,
+      	'product_engine' => $request->product_engine,
+      	'product_seat' => $request->product_seat,
+      	'product_color' => $request->product_color,
 
       	'product_price' => $request->product_price,
       	'product_discount' => $request->product_discount,

@@ -113,14 +113,14 @@ class IndexController extends Controller
 		$color = $product->product_color;
 		$product_color = explode(',', $color);
 
-		$size = $product->product_size;
-		$product_size = explode(',', $size);
+		$size = $product->product_seat;
+		$product_seat = explode(',', $size);
 
 		$multiImag = MultiImg::where('product_id',$id)->get();
 
 		$cat_id = $product->category_id;
 		$relatedProduct = Product::where('category_id',$cat_id)->where('id','!=',$id)->orderBy('id','DESC')->get();
-	 	return view('frontend.product.product_details',compact('product','multiImag','product_color','product_size','relatedProduct'));
+	 	return view('frontend.product.product_details',compact('product','multiImag','product_color','product_seat','relatedProduct'));
 
 	}
 
@@ -176,13 +176,13 @@ class IndexController extends Controller
 		$color = $product->product_color;
 		$product_color = explode(',', $color);
 
-		$size = $product->product_size;
-		$product_size = explode(',', $size);
+		$size = $product->product_seat;
+		$product_seat = explode(',', $size);
 
 		return response()->json(array(
 			'product' => $product,
 			'color' => $product_color,
-			'size' => $product_size,
+			'size' => $product_seat,
 
 		));
 
