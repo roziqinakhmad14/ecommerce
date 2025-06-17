@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 16, 2024 at 12:59 PM
+-- Generation Time: Jun 17, 2025 at 04:14 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -456,8 +456,11 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('nSPsxYuSsLd02dpvVgCiu4l4CwSPdyO99AAVRuXm', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiSFZkcEVnTHpFWVBnTElUeGdSMGtHVHYzOXNZcUNIdXY4TVpDcjQxZyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9wcm9kdWN0L2VkaXQvMTgiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUyOiJsb2dpbl9hZG1pbl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjI7czo0OiJjYXJ0IjthOjE6e3M6NzoiZGVmYXVsdCI7TzoyOToiSWxsdW1pbmF0ZVxTdXBwb3J0XENvbGxlY3Rpb24iOjI6e3M6ODoiACoAaXRlbXMiO2E6Mjp7czozMjoiYzhkOGFlYTI5YzkzNzU4ODRlMjU0ZTExNDc3MzgwOTQiO086MzI6Ikdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtIjoxMTp7czo1OiJyb3dJZCI7czozMjoiYzhkOGFlYTI5YzkzNzU4ODRlMjU0ZTExNDc3MzgwOTQiO3M6MjoiaWQiO3M6MjoiMTIiO3M6MzoicXR5IjtzOjE6IjEiO3M6NDoibmFtZSI7czoxNjoiU3dpdGNoIERpZmYgTG9jayI7czo1OiJwcmljZSI7ZDo2NTAwMDtzOjY6IndlaWdodCI7ZDoxMDA7czo3OiJvcHRpb25zIjtPOjM5OiJHbG91ZGVtYW5zXFNob3BwaW5nY2FydFxDYXJ0SXRlbU9wdGlvbnMiOjI6e3M6ODoiACoAaXRlbXMiO2E6Mzp7czo1OiJpbWFnZSI7czo0NjoidXBsb2FkL3Byb2R1Y3RzL3RoYW1ibmFpbC8xODE1NjE0Nzg4MzUzMTA0LmpwZyI7czo1OiJjb2xvciI7czoxNToiLS1QaWxpaCBXYXJuYS0tIjtzOjQ6InNpemUiO047fXM6Mjg6IgAqAGVzY2FwZVdoZW5DYXN0aW5nVG9TdHJpbmciO2I6MDt9czo3OiJ0YXhSYXRlIjtpOjA7czo0OToiAEdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtAGFzc29jaWF0ZWRNb2RlbCI7TjtzOjQ2OiIAR2xvdWRlbWFuc1xTaG9wcGluZ2NhcnRcQ2FydEl0ZW0AZGlzY291bnRSYXRlIjtpOjA7czo4OiJpbnN0YW5jZSI7czo3OiJkZWZhdWx0Ijt9czozMjoiMDI4MGRiNjZmMWQ4MTY3MjM0MTM4ZDBjZjI4Yzk5MjEiO086MzI6Ikdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtIjoxMTp7czo1OiJyb3dJZCI7czozMjoiMDI4MGRiNjZmMWQ4MTY3MjM0MTM4ZDBjZjI4Yzk5MjEiO3M6MjoiaWQiO3M6MjoiMTgiO3M6MzoicXR5IjtzOjE6IjEiO3M6NDoibmFtZSI7czozMzoiTkVXIFhQQU5ERVIgMS41TCBTUE9SVCBDVlQgNFgyIEFUIjtzOjU6InByaWNlIjtkOjMwNzgwMDAwMDtzOjY6IndlaWdodCI7ZDowO3M6Nzoib3B0aW9ucyI7TzozOToiR2xvdWRlbWFuc1xTaG9wcGluZ2NhcnRcQ2FydEl0ZW1PcHRpb25zIjoyOntzOjg6IgAqAGl0ZW1zIjthOjM6e3M6NToiaW1hZ2UiO3M6NDY6InVwbG9hZC9wcm9kdWN0cy90aGFtYm5haWwvMTgxNTg4MjY0NTkzMDQwMS5wbmciO3M6NToiY29sb3IiO3M6NzoiQWJ1LWFidSI7czo0OiJzaXplIjtOO31zOjI4OiIAKgBlc2NhcGVXaGVuQ2FzdGluZ1RvU3RyaW5nIjtiOjA7fXM6NzoidGF4UmF0ZSI7aTowO3M6NDk6IgBHbG91ZGVtYW5zXFNob3BwaW5nY2FydFxDYXJ0SXRlbQBhc3NvY2lhdGVkTW9kZWwiO047czo0NjoiAEdsb3VkZW1hbnNcU2hvcHBpbmdjYXJ0XENhcnRJdGVtAGRpc2NvdW50UmF0ZSI7aTowO3M6ODoiaW5zdGFuY2UiO3M6NzoiZGVmYXVsdCI7fX1zOjI4OiIAKgBlc2NhcGVXaGVuQ2FzdGluZ1RvU3RyaW5nIjtiOjA7fX19', 1731761922),
-('x0BzG3cPtmS793Bpkz8WEuGzBDmNhcReLXs92SOn', NULL, '127.0.0.1', 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiSFpOYlAxSm85RzNnc2VPZEk5RTN3cUdYWjJIYjRWOGVlb1lPRFlnSSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NzQ6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9wcm9kdWN0L2RldGFpbHMvMTgvbmV3LXhwYW5kZXItMS41bC1zcG9ydC1jdnQtNHgyLWF0Ijt9fQ==', 1731760757);
+('0A6JGoXCQir2CsYpXv0T8uEpbv7wruL2D35Xa0Qz', NULL, '127.0.0.1', 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiS0llTUN1M2F0d2c0VmhhUG9CYlhFTjZ6Z0VQR2Jqb0xOQmlNSnpXOCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzk6Imh0dHA6Ly84NmJjLTExNC0xMC00Ni02MC5uZ3Jvay1mcmVlLmFwcCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1750069244),
+('CavBdeWYtp8mCj7k47ogJnLkko5JeGroiN9JHTkR', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiZG16aUJyNTZyQnJHQzloVGRvZGZCNmFJRllxWTZsNzV6SXA3TWpCSiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1750133656),
+('CbXvzt54d8kePyFIvHHDtzCUVOWntsKEO5RmG7U9', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiV1N6cDFDZGxqaHlMeHZncmhlQVE2d0NMSnlCZjVXdjVmbnRxdk1yRCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzk6Imh0dHA6Ly84NmJjLTExNC0xMC00Ni02MC5uZ3Jvay1mcmVlLmFwcCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1750068054),
+('KDqdlW2DG5CWKvMSY0TSKYyTPjA6SLeOIa3yNVbs', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoiYUxnUVNDTVQ3OWZRZEh4aGRDM0dKVHk1eEhsYmJOeGtHNGJKZDQwbyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1750068044),
+('Wdwr5HZ1CcYm6uDTsIghdiJNTKY1hIamILuNmU3b', NULL, '127.0.0.1', 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTnk2dHpoSnZPUDA5dWQza3ltNjVjc3RxM2xZVzRFZ2pLWUh3UTZBRiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzk6Imh0dHA6Ly84NmJjLTExNC0xMC00Ni02MC5uZ3Jvay1mcmVlLmFwcCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1750073920);
 
 -- --------------------------------------------------------
 
@@ -554,7 +557,7 @@ CREATE TABLE `site_settings` (
 --
 
 INSERT INTO `site_settings` (`id`, `logo`, `phone_one`, `phone_two`, `email`, `company_name`, `company_address`, `facebook`, `twitter`, `linkedin`, `youtube`, `created_at`, `updated_at`) VALUES
-(1, 'upload/logo/1727013687201165.png', '+6281563977109', '+62895335490295', 'esalza@gmail.com', 'SALZA', 'Jl. Babakan Tiga No. 82 Ciwidey', 'salzashop', 'salzashop', 'salzashop', 'salza', NULL, '2022-05-12 11:03:31');
+(1, 'upload/logo/1727013687201165.png', '+6281383134020', '+6281383134020', 'mitsubishilbum10@gmail.com', 'Mitsubishi Lautan Berlian', 'Jl. Panjang No.8 Kebon Jeruk', NULL, NULL, NULL, NULL, NULL, '2025-06-15 23:08:58');
 
 -- --------------------------------------------------------
 
@@ -659,7 +662,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `post_code`, `address`, `last_seen`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
-(1, 'User', 'user@gmail.com', '081563977109', '40972', 'Kp. Cibodas Rt 01 / Rw 16 Desa Cibodas', '2022-05-18 14:33:40', NULL, '$2y$10$oQNzoL1AvA9NBP.6OX7Xt.xH/3/mV0u5JmcJUTN7pT/W3XRrnAP.2', NULL, NULL, 'njIw6Wf2KiUp64aoUnB1rBLXX5qyYLH1BdQYomVJ1j8nnH46WoEm6IpLAggG', NULL, '202205121617avatar-16.png', '2022-05-12 09:12:22', '2022-05-18 07:33:40'),
+(1, 'User', 'user@gmail.com', '081563977109', '40972', 'Kp. Cibodas Rt 01 / Rw 16 Desa Cibodas', '2025-06-16 03:53:25', NULL, '$2y$10$oQNzoL1AvA9NBP.6OX7Xt.xH/3/mV0u5JmcJUTN7pT/W3XRrnAP.2', NULL, NULL, 'bA3v7BVBQCP8akg4qzz9WGeLkNgnqp7ybhw4PGjREXGnIcjBNOCKpcxvinFz', NULL, '202205121617avatar-16.png', '2022-05-12 09:12:22', '2025-06-15 20:53:25'),
 (2, 'Salsa Nur Maulani', 'salsa@gmail.com', '0895335490295', '40973', 'Kp. Pasir Handap Rt 01 / Rw 16', '2022-05-12 18:25:12', NULL, '$2y$10$i0/H6FSzZX0LOly01Omz2.m9Gup2OmCKIkWCYqs01BN2loK6H90XW', NULL, NULL, NULL, NULL, '202205121820avatar-3.png', '2022-05-12 11:18:23', '2022-05-12 11:25:12');
 
 -- --------------------------------------------------------
